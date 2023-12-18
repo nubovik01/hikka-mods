@@ -6,7 +6,6 @@
 #      |_|                                       
 #                 © Copyright 2023
 #              https://t.me/qwkrtezzz
-#            https://github.com/nubovik01
 #                   
 # 🔒         Licensed under the GNU AGPLv3
 # 🌐   https://www.gnu.org/licenses/agpl-3.0.html
@@ -47,8 +46,9 @@ class QwkrtezzzTimers(loader.Module):
        )
     )
 
+  @loader.command()
   async def newyeartime(self, message):
-    """Узнать сколько времени осталось до нового года"""
+    """Узнать сколько времени до нового года"""
     timeToNewYear = getTime(12, 31)
 
     await utils.answer(
@@ -62,6 +62,7 @@ class QwkrtezzzTimers(loader.Module):
        )
     )
 
+  @loader.command()
   async def qwzbirthday(self, message):
     """Узнать сколько времени до дня рождения разработчика этого модуля (Никиты/Qwkrtezzz)"""
     timeToBirthday = getTime(4, 9)
