@@ -6,6 +6,7 @@
 #      |_|                                       
 #                 © Copyright 2023
 #              https://t.me/qwkrtezzz
+#            https://github.com/nubovik01
 #                   
 # 🔒         Licensed under the GNU AGPLv3
 # 🌐   https://www.gnu.org/licenses/agpl-3.0.html
@@ -32,7 +33,46 @@ class QwkrtezzzTimers(loader.Module):
 
   @loader.command()
   async def summertime(self, message):
-    """узнать сколько времени осталось до лета"""
+    """Узнать сколько времени осталось до лета"""
     timeToSummer = getTime(6, 1)
 
-    await utils.answer(message, (f'До лета осталось {timeToSummer.days} дней, {timeToSummer.seconds // 3600} часов, {timeToSummer.seconds // 60 % 60} минут, {timeToSummer.seconds % 60} секунд.\n'))
+    await utils.answer(
+      message, 
+       (
+         f'До лета осталось: '
+         f'{timeToSummer.days} дней, '
+         f'{timeToSummer.seconds // 3600} часов, '
+         f'{timeToSummer.seconds // 60 % 60} минут, '
+         f'{timeToSummer.seconds % 60} секунд.'
+       )
+    )
+
+  async def newyeartime(self, message):
+    """Узнать сколько времени осталось до нового года"""
+    timeToNewYear = getTime(12, 31)
+
+    await utils.answer(
+      message, 
+       (
+         f'До нового года осталось: '
+         f'{timeToNewYear.days} дней, '
+         f'{timeToNewYear.seconds // 3600} часов, '
+         f'{timeToNewYear.seconds // 60 % 60} минут, '
+         f'{timeToNewYear.seconds % 60} секунд 🎄'
+       )
+    )
+
+  async def qwzbirthday(self, message):
+    """Узнать сколько времени до дня рождения разработчика этого модуля (Никиты/Qwkrtezzz)"""
+    timeToBirthday = getTime(4, 9)
+
+    await utils.answer(
+      message, 
+       (
+         f'До дня рождения разработчика модуля QwkrtezzzTimers осталось: '
+         f'{timeToBirthday.days} дней, '
+         f'{timeToBirthday.seconds // 3600} часов, '
+         f'{timeToBirthday.seconds // 60 % 60} минут, '
+         f'{timeToBirthday.seconds % 60} секунд 🎄'
+       )
+    )
