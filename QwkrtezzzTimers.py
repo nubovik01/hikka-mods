@@ -74,6 +74,6 @@ class QwkrtezzzTimers(loader.Module):
          f'{timeToBirthday.days} дней, '
          f'{timeToBirthday.seconds // 3600} часов, '
          f'{timeToBirthday.seconds // 60 % 60} минут, '
-         f'{timeToBirthday.seconds % 60} секунд 🎄'
+         f'{timeToBirthday.seconds % 60} секунд 🎉'
        )
     )
