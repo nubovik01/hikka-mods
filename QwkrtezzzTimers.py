@@ -22,8 +22,9 @@ def getTime(month, day):
   if now.month > month or (now.month == month and now.day > day):
     date = datetime(now.year+1, month, day)
     timeToIt = abs(date-now)
+    return timeToIt
 
-  return timeToIt
+  return date
 
 class QwkrtezzzTimers(loader.Module):
   '''Таймеры до начала определённых событий'''
