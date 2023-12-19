@@ -24,7 +24,7 @@ def getTime(month, day):
     timeToIt = abs(date-now)
     return timeToIt
   else:
-    return date
+    return datetime(now.year, month, day)
 
 class QwkrtezzzTimers(loader.Module):
   '''Таймеры до начала определённых событий'''
