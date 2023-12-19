@@ -39,7 +39,7 @@ class QwkrtezzzTimers(loader.Module):
     await utils.answer(
       message, 
        (
-         f'До лета осталось: '
+         f'До лета осталось '
          f'{timeToSummer.days} дней, '
          f'{timeToSummer.seconds // 3600} часов, '
          f'{timeToSummer.seconds // 60 % 60} минут, '
@@ -55,11 +55,11 @@ class QwkrtezzzTimers(loader.Module):
     await utils.answer(
       message, 
        (
-         f'До нового года осталось: '
+         f'До нового года осталось '
          f'{timeToNewYear.days} дней, '
          f'{timeToNewYear.seconds // 3600} часов, '
          f'{timeToNewYear.seconds // 60 % 60} минут, '
-         f'{timeToNewYear.seconds % 60} секунд.'
+         f'{timeToNewYear.seconds % 60} секунд 🎄'
        )
     )
 
@@ -71,10 +71,10 @@ class QwkrtezzzTimers(loader.Module):
     await utils.answer(
       message, 
        (
-         f'До дня рождения разработчика модуля QwkrtezzzTimers осталось: '
+         f'До дня рождения разработчика модуля QwkrtezzzTimers осталось '
          f'{timeToBirthday.days} дней, '
          f'{timeToBirthday.seconds // 3600} часов, '
          f'{timeToBirthday.seconds // 60 % 60} минут, '
-         f'{timeToBirthday.seconds % 60} секунд 🎉'
+         f'{timeToBirthday.seconds % 60} секунд 🎁 🎉'
        )
     )
