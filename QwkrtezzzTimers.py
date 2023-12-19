@@ -48,7 +48,7 @@ class QwkrtezzzTimers(loader.Module):
 
   @loader.command()
   async def newyeartime(self, message):
-    """Узнать сколько времени до нового года"""
+    """Узнать сколько времени осталось до нового года"""
     timeToNewYear = getTime(12, 31)
 
     await utils.answer(
@@ -58,7 +58,7 @@ class QwkrtezzzTimers(loader.Module):
          f'{timeToNewYear.days} дней, '
          f'{timeToNewYear.seconds // 3600} часов, '
          f'{timeToNewYear.seconds // 60 % 60} минут, '
-         f'{timeToNewYear.seconds % 60} секунд 🎄'
+         f'{timeToNewYear.seconds % 60} секунд.'
        )
     )
 
